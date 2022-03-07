@@ -16,7 +16,7 @@ function Converter() {
     setValue(e.target.value);
     const rgb = hexToRgb(e.target.value);
     if (rgb !== null) {
-      setRgbContext(hexToRgb(e.target.value))
+      setRgbContext(rgb)
       setColor(e.target.value);
     } else if (e.target.value.length >= 7) {
       setColor('#ff0000');
